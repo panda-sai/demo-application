@@ -1,0 +1,18 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TestSprite/testsprite-cli/main/schemas/plan.schema.json",
+  "projectId": "REPLACE_WITH_PROJECT_ID",
+  "type": "frontend",
+  "name": "User can submit the contact form and sees a success message",
+  "description": "Filling in name, email and message and pressing Send Message shows the confirmation \"Thank you! Your message has been sent.\"",
+  "priority": "p0",
+  "planSteps": [
+    { "type": "action", "description": "Open the home page and scroll down to the Contact us section" },
+    { "type": "action", "description": "Type Jane Doe into the Name field" },
+    { "type": "action", "description": "Type jane@example.com into the Email field" },
+    { "type": "action", "description": "Type Hello, I have a question about my order. into the Message field" },
+    { "type": "action", "description": "Click the Send Message button" },
+    { "type": "assertion", "description": "Verify the button briefly shows Sending… while the message is submitting" },
+    { "type": "assertion", "description": "Verify a success confirmation appears with the text: Thank you! Your message has been sent." },
+    { "type": "assertion", "description": "Verify a Send another message button is shown in place of the form" }
+  ]
+}

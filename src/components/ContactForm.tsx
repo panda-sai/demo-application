@@ -56,15 +56,11 @@ export function ContactForm() {
     await fakeSubmit(values)
 
     // ─────────────────────────────────────────────────────────────────────
-    // 🔧 DEMO BREAK POINT #1 — SUCCESS MESSAGE
-    // To break the contact form for a TestSprite demo, change the line below to:
-    //
-    //     setStatus('idle')
-    //
-    // The form will appear to submit ("Sending…") but the success message
-    // "Thank you! Your message has been sent." will never appear.
+    // 🔧 DEMO BREAK POINT #1 — SUCCESS MESSAGE (currently BROKEN)
+    // DEMO BREAK: Remove or change this line to restore the happy path.
+    // Fix: change setStatus('idle') back to setStatus('success').
     // ─────────────────────────────────────────────────────────────────────
-    setStatus('success')
+    setStatus('idle')
     setValues(EMPTY_FORM)
   }
 
