@@ -1,18 +1,19 @@
 {
   "$schema": "https://raw.githubusercontent.com/TestSprite/testsprite-cli/main/schemas/plan.schema.json",
-  "projectId": "REPLACE_WITH_PROJECT_ID",
+  "projectId": "bbf3800e-f09d-42f3-9c68-eb2ac62dc0fa",
   "type": "frontend",
   "name": "User can submit the contact form and sees a success message",
-  "description": "Filling in name, email and message and pressing Send Message shows the confirmation \"Thank you! Your message has been sent.\"",
+  "description": "Filling in name, email and message and submitting the contact form replaces the form with the confirmation \"Thank you! Your message has been sent.\" and a Send another message button.",
   "priority": "p0",
   "planSteps": [
-    { "type": "action", "description": "Open the home page and scroll down to the Contact us section" },
+    { "type": "action", "description": "Navigate to the home page" },
+    { "type": "action", "description": "Scroll down to the Contact us section" },
     { "type": "action", "description": "Type Jane Doe into the Name field" },
     { "type": "action", "description": "Type jane@example.com into the Email field" },
     { "type": "action", "description": "Type Hello, I have a question about my order. into the Message field" },
-    { "type": "action", "description": "Click the Send Message button" },
-    { "type": "assertion", "description": "Verify the button briefly shows Sending… while the message is submitting" },
-    { "type": "assertion", "description": "Verify a success confirmation appears with the text: Thank you! Your message has been sent." },
-    { "type": "assertion", "description": "Verify a Send another message button is shown in place of the form" }
+    { "type": "action", "description": "Submit the contact form" },
+    { "type": "action", "description": "Wait about two seconds for the submission to finish" },
+    { "type": "assertion", "description": "Verify the Contact us section now shows a success confirmation with the text: Thank you! Your message has been sent." },
+    { "type": "assertion", "description": "Verify the Contact us section shows a Send another message button in place of the Name, Email and Message fields" }
   ]
 }
