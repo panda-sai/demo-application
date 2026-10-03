@@ -3,15 +3,14 @@
   "projectId": "bbf3800e-f09d-42f3-9c68-eb2ac62dc0fa",
   "type": "frontend",
   "name": "Adding products to the cart updates the header cart counter and cart summary",
-  "description": "Adding the same product twice and a second product once makes the header cart badge show 3, the cart summary lists both products, and Clear Cart resets the badge to 0.",
+  "description": "Adding the same product twice and a second product once makes the header cart badge show 3 and the cart summary list both products with the right quantities.",
   "priority": "p0",
   "planSteps": [
     { "type": "action", "description": "Navigate to the home page" },
-    { "type": "action", "description": "Click Add to Cart on the Aurora headphones product card" },
-    { "type": "action", "description": "Click Add to Cart on the Aurora headphones product card again" },
-    { "type": "action", "description": "Click Add to Cart on the Ember mug product card" },
-    { "type": "assertion", "description": "Verify the cart counter badge in the page header shows 3, and the cart summary panel lists the Aurora headphones with quantity 2 and the Ember mug with quantity 1" },
-    { "type": "action", "description": "Click the Clear Cart button in the cart summary panel" },
-    { "type": "assertion", "description": "Verify the cart counter badge in the page header shows 0 and the cart summary panel says the cart is empty" }
+    { "type": "action", "description": "Click Add to Cart on the Aurora Headphones product card" },
+    { "type": "action", "description": "Click Add to Cart on the Aurora Headphones product card again" },
+    { "type": "action", "description": "Click Add to Cart on the Ember Smart Mug product card" },
+    { "type": "assertion", "description": "Verify the cart counter badge in the page header shows 3" },
+    { "type": "assertion", "description": "Verify the cart summary panel lists Aurora Headphones with quantity 2 and Ember Smart Mug with quantity 1" }
   ]
 }

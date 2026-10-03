@@ -1,0 +1,16 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TestSprite/testsprite-cli/main/schemas/plan.schema.json",
+  "projectId": "bbf3800e-f09d-42f3-9c68-eb2ac62dc0fa",
+  "type": "frontend",
+  "name": "Clear Cart empties the cart and resets the header cart counter to 0",
+  "description": "After adding products, clicking Clear Cart resets the header cart badge to 0 and the cart summary shows the cart is empty.",
+  "priority": "p1",
+  "planSteps": [
+    { "type": "action", "description": "Navigate to the home page" },
+    { "type": "action", "description": "Click Add to Cart on the Aurora Headphones product card" },
+    { "type": "action", "description": "Click Add to Cart on the Ember Smart Mug product card" },
+    { "type": "action", "description": "Click the Clear Cart button in the cart summary panel" },
+    { "type": "assertion", "description": "Verify the cart counter badge in the page header shows 0" },
+    { "type": "assertion", "description": "Verify the cart summary panel says the cart is empty and lists no products" }
+  ]
+}
